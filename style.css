@@ -9,12 +9,23 @@ body {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
-.header {
+.navbar {
+  padding-top: 20px;
+}
+
+.comment {
+  background-color: #e5e7eb;
+}
+
+.header,
+.random-info,
+.comment,
+.cta {
   padding: 150px 0;
 }
 
@@ -28,14 +39,69 @@ body {
   justify-content: space-between;
 }
 
+.header .container {
+  display: flex;
+}
+
+.random-info .container {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.cta .container {
+  display: flex;
+  justify-content: center;
+  color: #f9faf8;
+}
+
+.cta-box {
+  display: flex;
+  gap: 150px;
+  align-items: center;
+  background-color: #3882f6;
+  padding: 50px 100px;
+  border-radius: 5px;
+}
+
+.comment .container {
+  width: 70%;
+  padding: 0;
+}
+
 h1,
 h2,
 .header-btn {
   color: #f9faf8;
 }
 
+h3,
+.comment-text {
+  font-size: 36px;
+}
+
 h1 {
   font-size: 24px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  text-align: center;
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+h2,
+.header-subtext {
+  margin-bottom: 15px;
 }
 
 .nav,
@@ -47,9 +113,15 @@ h1 {
 .header-btn {
   background-color: #3882f6;
   border: none;
-  padding: 5px 15px;
+  padding: 8px 24px;
   border-radius: 5px;
   font-weight: bold;
+}
+
+.header-img {
+  margin-left: 50px;
+  height: auto;
+  width: 450px;
 }
 
 .navbar ul {
@@ -62,4 +134,49 @@ h1 {
 
 ul {
   list-style-type: none;
+}
+
+.boxes {
+  border: 5px solid #3882f6;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.box-text {
+  width: 200px;
+  color: #808080;
+  line-height: 1.2;
+}
+
+.comment-text {
+  margin-bottom: 10px;
+}
+
+.comment-author {
+  text-align: end;
+}
+
+.cta-btn {
+  font-weight: bold;
+  color: #f9faf8;
+  border: 2px solid #f9faf8;
+  background-color: #3882f6;
+  border-radius: 5px;
+  padding: 5px 25px;
+}
+
+.footer {
+  color: #f9faf8;
+  padding: 35px 0;
+  background-color: #1f2937;
+  text-align: center;
+}
+
+/* PSEUDO ELEMENTS */
+
+button:hover,
+.item:hover {
+  cursor: pointer;
 }
